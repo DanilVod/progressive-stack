@@ -1,4 +1,5 @@
 import tw from 'twin.macro';
+import { Counter } from './features/counter/Counter';
 
 function App() {
   const Wrapper = tw.section`flex w-full`;
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <Wrapper>
         <Column>Hi</Column>
+        <Counter />
       </Wrapper>
     </div>
   );
