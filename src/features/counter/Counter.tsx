@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import Button from '../../components/Button';
 
 import { useAppSelector, useAppDispatch } from '../../hooks/redux';
@@ -10,7 +9,6 @@ export function Counter() {
   const count = useAppSelector((state) => state.counter.value);
   const dispatch = useAppDispatch();
 
-  console.log(count);
   return (
     <>
       <h1>{count}</h1>
